@@ -1,8 +1,8 @@
-## Onboarding Survey App - Frontend Application with React
-* React Application for Onboarding Survey, 
+## Onboarding Survey App
+* React Application for Onboarding Survey.
 * Frontend in React, HTML and CSS3.
 * Backend in Node JS, Express and mongoDB.
-Demo for the app: https://codesandbox.io/s/crazy-voice-lh0tk
+* Demo for the app: https://codesandbox.io/s/crazy-voice-lh0tk
 
 ## Requirements for the App:
 1. Download Node JS from https://nodejs.org/en/download/
