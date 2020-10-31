@@ -3,15 +3,41 @@
 * Frontend in React, HTML and CSS3.
 * Backend in Node JS, Express and mongoDB.
 * Demo for the app: https://codesandbox.io/s/crazy-voice-lh0tk
+<table>
+<tr>
+<td>
 <img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/1.png" width="400px" height="auto">
+</td>
+<td>
 <img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/2.png" width="400px" height="auto">
+</td>
+</tr>
+<tr>
+<td>
 <img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/3.png" width="400px" height="auto">
+</td>
+<td>
 <img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/4.png" width="400px" height="auto">
+</td>
+</tr>
+<tr>
+<td>
 <img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/5.png" width="400px" height="auto">
+</td>
+<td>
 <img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/6.png" width="400px" height="auto">
+</td>
+</tr>
+<tr>
+<td>
 <img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/7.png" width="400px" height="auto">
+</td>
+<td>
 <img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/8.png" width="400px" height="auto">
-
+</td>
+</tr>
+<table>
+</br>
 ## Requirements for the App:
 1. Download Node JS from https://nodejs.org/en/download/
 * Select the package depending on your operating system Windows or macOS or Linux.
