@@ -19,8 +19,8 @@
 </td>
 </tr>
 <tr>
-<th>Survey Page 1 with option selected</th>
-<th>Survey Page 2</th>
+<th>Page 1 with option selected</th>
+<th>Page 2</th>
 </tr>
 <tr>
 <td>
@@ -31,8 +31,8 @@
 </td>
 </tr>
 <tr>
-<th>Survey Page 3</th>
-<th>Survey Page 4</th>
+<th>Page 3</th>
+<th>Page 4</th>
 </tr>
 <tr>
 <td>
@@ -43,8 +43,8 @@
 </td>
 </tr>
 <tr>
-<th>Survey Page 5</th>
-<th>Survey Result Page</th>
+<th>SPage 5</th>
+<th>Result Page</th>
 </tr>
 <tr>
 <td>
