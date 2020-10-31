@@ -21,7 +21,7 @@ const paginateData = (model) => {
         const startIndex = (page - 1) * limit
         const endIndex = page * limit
         const results = {}
-        if(startIndex >= 1) { 
+        if(startIndex >= 1) {
             results.previous = {
                 page: page - 1,
                 limit: limit
