@@ -7,35 +7,51 @@
 ## Screenshots
 <table>
 <tr>
-<td>
-<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/1.png" width="400px" height="auto">
-</td>
-<td>
-<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/2.png" width="400px" height="auto">
-</td>
+<th>Survey Landing Page</th>
+<th>Survey Page 1</th>
 </tr>
 <tr>
 <td>
-<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/3.png" width="400px" height="auto">
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/1.png">
 </td>
 <td>
-<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/4.png" width="400px" height="auto">
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/5.png" width="400px" height="auto">
-</td>
-<td>
-<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/6.png" width="400px" height="auto">
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/2.png">
 </td>
 </tr>
 <tr>
+<th>Survey Page 1 with option selected</th>
+<th>Survey Page 2</th>
+</tr>
+<tr>
 <td>
-<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/7.png" width="400px" height="auto">
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/3.png"
 </td>
 <td>
-<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/8.png" width="400px" height="auto">
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/4.png">
+</td>
+</tr>
+<tr>
+<th>Survey Page 3</th>
+<th>Survey Page 4</th>
+</tr>
+<tr>
+<td>
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/5.png">
+</td>
+<td>
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/6.png">
+</td>
+</tr>
+<tr>
+<th>Survey Page 5</th>
+<th>Survey Result Page</th>
+</tr>
+<tr>
+<td>
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/7.png">
+</td>
+<td>
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/8.png">
 </td>
 </tr>
 <table>
@@ -71,7 +87,7 @@ npm run dev
 * Created a Mongoose schema in datas.js
 
 ### Extra information: 
-* This command "npm run dev" will run express and react servers at the same time
+* This command "npm run dev" will run express and react servers one after the other
 * Express server default listens on port 3000, I've changed it to port 1000. Because it can conflict with react port which is also 3000
 * To see the server response in ```JSON format``` coming from mongoDB visit this url: ```http://localhost:1000/api/surveyoptions?page=1``` you can change the parameter value to page=2, page=3 up to 5.
 
