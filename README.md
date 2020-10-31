@@ -104,7 +104,7 @@ npm install -g concurrently
 npm install -g nodemon
 ```
 ### I've created 7 components for this App:
-1.``` App.js```: It contains our AppProvider wrapper and three Components and it's Routes: Home, Diet, and DietComplete.
+1.``` App.js```: It contains our AppProvider and three Components and it's Routes: Home, Diet, and DietComplete.
 
 2.``` Nav.js```: This component is the header of the App and it contains the progress bar, survey navigation items and number of questions.
 
