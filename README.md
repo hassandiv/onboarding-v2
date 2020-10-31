@@ -43,7 +43,7 @@
 </td>
 </tr>
 <tr>
-<th>SPage 5</th>
+<th>Page 5</th>
 <th>Result Page</th>
 </tr>
 <tr>
@@ -81,7 +81,7 @@ npm run dev
 
 ### Express Server:
 * Express and mongoDB added to the server.js file.
-* MongoDB Atlas connected with my username and password to the cloud. No need for exporting database.
+* MongoDB Atlas connected with a database user on the cloud. No need for exporting database.
 * Our Rest API is a get request and created for our survey data inside of server.js file.
 * Also, implemented a pagination function to sync the data, total number of pages and items limit per page.
 * Created a Mongoose schema in datas.js
@@ -110,10 +110,10 @@ npm install -g nodemon
 
 3.``` AppContext.js```: Context API contains our states "count" for counting the number of questions and "percentage" for our progress bar.
 
-4.``` Home.js```: Main Survey App Landing Page
+4.``` Home.js```: Main Survey App Landing Page and it contains image and content
 
 5.``` Diet.js```: It has a prop called Match and it is passed to each survey page by getting page id.
 
 6.``` DietComplete.js```: It has the content for the final result page.
 
-7.``` Survey.js```: It contains the rest API coming from Express server and fetched with useEffect hook, multiple states, a radio button and form submission.
+7.``` Survey.js```: It contains the rest API from Express server fetched with useEffect hook, multiple states, a radio button and form submission.
