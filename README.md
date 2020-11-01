@@ -67,7 +67,7 @@
 
 ## How to use/test the App:
 #### Open visual studio terminal and run the following commands</p>
-Clone repository from GitHub
+First clone repository from GitHub
 ```
 git clone git@github.com:hassan-mo/onboarding-v2.git
 ```
@@ -104,7 +104,7 @@ npm run dev
 * Also, I have implemented a pagination function to sync the data, total number of pages and items limit per page.
 * Created a Mongoose schema in datas.js
 
-### Extra information: 
+### Extra Information: 
 * The command "npm run dev" will run both servers express and react one after the other.
 * Express server default listens on port 3000, I've changed it to port 1000. Because it can conflict with react port which is also 3000.
 * You can take a look at the server response in ```JSON format``` visit this url: ```http://localhost:1000/api/surveyoptions?page=1``` you can change the parameter value to ```page=2, page=3 up to 5```.
