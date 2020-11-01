@@ -14,8 +14,8 @@ const App = () => {
             <Router>
               <Switch>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/diet/complete" component={DietComplete} />
-                <Route exact path="/diet/:id" component={Diet} />
+                <Route path="/diet/complete" component={DietComplete} />
+                <Route path="/diet/:id" component={Diet} />
               </Switch>
             </Router>
       </div>

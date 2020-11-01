@@ -8,8 +8,8 @@ const DietComplete = () => {
     const { setCount, setPercentage } = useContext(AppContext)
 
     useEffect(() => {
-        setCount(1)
-        setPercentage(20)
+        setCount(0)
+        setPercentage(0)
     })
 
     return (
@@ -32,7 +32,11 @@ const DietComplete = () => {
                     Lets take a look at how you
                     look in the <span>Home</span> category...
                 </p>
-                <button onClick={() => history.push("/") }className="btnComponent">Continue</button>
+                <button 
+                    onClick={() => history.push("/") }
+                    className="btnComponent">
+                    Continue
+                </button>
             </div>
         </>
     )

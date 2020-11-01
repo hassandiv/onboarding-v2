@@ -1,14 +1,18 @@
-import React, { useState, createContext } from 'react'
+import React, { useState, createContext, useEffect } from 'react'
 export const AppContext = createContext()
-
 
 export const AppProvider = props => {
 
-    //first state count numbers
-    const [count, setCount] = useState(1)
-    //second state count percentage
-     const [percentage, setPercentage] = useState(20)
-    
+    const initialCount = () => Number(localStorage.getItem('count')) || 0
+    const initialPercentage = () => Number(localStorage.getItem('percentage')) || 0
+    const [count, setCount] = useState(initialCount)
+    const [percentage, setPercentage] = useState(initialPercentage)
+
+    useEffect(()=> {
+        localStorage.setItem('count', count)
+        localStorage.setItem('percentage', percentage)
+    }, [count, percentage])
+
     return (
         <>
             <AppContext.Provider value={{ count, setCount, percentage, setPercentage }}>
@@ -17,11 +21,3 @@ export const AppProvider = props => {
         </>
     )
 }
-
-    //This is our context component it has 2 states.
-    //First state is a simple counter for our questions 1,2,3... of 24
-    //Second state is a simple counter for the top progress bar
-    //Our states are passed into the AppContext.Provider value as objects
-    //We imported our AppContext into our Nav Component and 1 to 5 Steps Components
-    //The Nav component displays the changes from our state.
-    //The 1 to 5 Steps Components makes the changes to our state, by clicking on the "Next question" green button.
