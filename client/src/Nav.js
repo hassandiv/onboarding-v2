@@ -4,7 +4,7 @@ import { AppContext } from './AppContext'
 const Nav = () => {
 
     const { count, percentage } = useContext(AppContext)
-
+   
     return (
         <>
             <div className="proBar">
