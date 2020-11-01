@@ -69,6 +69,7 @@
 * Open visual studio terminal and run the following commands
 ```
 git clone git@github.com:hassan-mo/onboarding-v2.git
+cd onboarding-v2
 npm install
 npm run dev
 ```
