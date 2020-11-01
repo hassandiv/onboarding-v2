@@ -87,7 +87,7 @@ npm run dev
 ### Extra information: 
 * This command "npm run dev" will run express and react servers one after the other
 * Express server default listens on port 3000, I've changed it to port 1000. Because it can conflict with react port which is also 3000
-* To see the server response in ```JSON format``` coming from mongoDB visit this url: ```http://localhost:1000/api/surveyoptions?page=1``` you can change the parameter value to page=2, page=3 up to 5.
+* To see the server response in ```JSON format``` coming from mongoDB visit this url: ```http://localhost:1000/api/surveyoptions?page=1``` you can change the parameter value to ```page=2, page=3 up to 5```.
 
 ### NPM Packages and Modules Installed:
 Client Side
