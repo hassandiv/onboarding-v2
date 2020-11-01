@@ -66,8 +66,7 @@
 * Follow the same installation steps above to complete the installation.
 
 ## How to use/test the App:
-* Open visual studio terminal and run the following commands
-<br>
+#### Open visual studio terminal and run the following commands</p>
 Clone repository from GitHub
 ```
 git clone git@github.com:hassan-mo/onboarding-v2.git
