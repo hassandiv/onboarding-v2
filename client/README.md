@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+## Onboarding Survey App
+* React Application for Onboarding Survey.
+* Frontend in React JS, HTML and CSS3.
+* Backend in Node JS, Express and mongoDB Atlas.
+* Demo for the app: https://codesandbox.io/s/crazy-voice-lh0tk
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Screenshots
+<table>
+<tr>
+<th>Survey Landing Page</th>
+<th>Survey Page 1</th>
+</tr>
+<tr>
+<td>
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/1.png" width="400" height="auto">
+</td>
+<td>
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/2.png" width="400" height="auto">
+</td>
+</tr>
+<tr>
+<th>Page 1 with option selected</th>
+<th>Page 2</th>
+</tr>
+<tr>
+<td>
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/3.png"
+</td>
+<td>
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/4.png">
+</td>
+</tr>
+<tr>
+<th>Page 3</th>
+<th>Page 4</th>
+</tr>
+<tr>
+<td>
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/5.png">
+</td>
+<td>
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/6.png">
+</td>
+</tr>
+<tr>
+<th>Page 5</th>
+<th>Result Page</th>
+</tr>
+<tr>
+<td>
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/7.png">
+</td>
+<td>
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/8.png">
+</td>
+</tr>
+<table>
+  
+## Requirements for the App:
+1. Download Node JS from https://nodejs.org/en/download/
+* Select the package depending on your operating system Windows or macOS or Linux.
+* Click save on your desktop. 
+* After the downloading is complete, double click on the application to install Node JS on your machine.
+* Follow the installation steps as normal. Now you have Node JS installed on your machine.
+2. Download Visual Studio from https://visualstudio.microsoft.com/downloads/
+3. Downlaod Google chrome browser or use your favourite web browser.
+* Follow the same installation steps above to complete the installation.
 
-## Available Scripts
+## How to use/test the App:
+* Open visual studio terminal and run the following commands
+```
+git clone git@github.com:hassan-mo/onboarding-v2.git
+npm install
+npm run dev
+```
+* React app should start on a new browser tab with the following url: ```http://localhost:3000/```
+* You can test the App by clicking on the green button "Take the survey".
+* Follow the Application step by step and choose the answer to the questions and click on the green button "Next question". 
+* It is required to select an option before clicking on the "Next question" button.
 
-In the project directory, you can run:
+### Express Server:
+* Express and mongoDB Atlas added to the server.js file.
+* MongoDB Atlas connected with a database user on the cloud. No need for exporting database.
+* Our Rest API is a get request and created for our survey data inside of server.js file.
+* Also, I have implemented a pagination function to sync the data, total number of pages and items limit per page.
+* Created a Mongoose schema in datas.js
 
-### `npm start`
+### Extra information: 
+* The command "npm run dev" will run both servers express and react one after the other.
+* Express server default listens on port 3000, I've changed it to port 1000. Because it can conflict with react port which is also 3000.
+* You can take a look at the server response in ```JSON format``` visit this url: ```http://localhost:1000/api/surveyoptions?page=1``` you can change the parameter value to ```page=2, page=3 up to 5```.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### NPM Packages and Modules Installed:
+Client Side
+```
+npm install react-router-dom
+```
+Server Side
+```
+npm install mongoose
+npm install express
+npm install -g concurrently
+npm install -g nodemon
+```
+### I've created 7 components for this App:
+1.``` App.js```: It contains our AppProvider, three Components and it's Routes: Home, Diet, and DietComplete.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2.``` Nav.js```: Nav component is the header of the App, it contains our survey menu items, progress bar and number of questions.
 
-### `npm test`
+3.``` AppContext.js```: Context API contains our initial state for "count" and "percentage" variables. The counter will update our state and save it in a local storage, if we refresh the brower our state stay the same.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4.``` Home.js```: Main Landing Page and it contains image and content.
 
-### `npm run build`
+5.``` Survey.js```: It contains the rest API from Express server fetched with our useEffect hook, multiple states and a form with our radio button and submit button.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6.``` Diet.js```: It contains a prop called Match, this prop is passed into every route that is rendered from survey component. Which holds the key and the actual value in the URL.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+7.``` DietComplete.js```: It has the content for the final result page.
