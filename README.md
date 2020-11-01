@@ -67,10 +67,30 @@
 
 ## How to use/test the App:
 * Open visual studio terminal and run the following commands
+<br>
+Clone repository from GitHub
 ```
 git clone git@github.com:hassan-mo/onboarding-v2.git
+```
+then
+```
 cd onboarding-v2
+```
+Install npm for Express server
+```
 npm install
+```
+then
+```
+cd client
+```
+Install npm for React App
+```
+npm install
+```
+then
+```
+cd ..
 npm run dev
 ```
 * React app should start on a new browser tab with the following url: ```http://localhost:3000/```
