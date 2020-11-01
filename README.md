@@ -12,10 +12,10 @@
 </tr>
 <tr>
 <td>
-<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/1.png">
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/1.png" width="400" height="auto">
 </td>
 <td>
-<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/2.png">
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/2.png" width="400" height="auto">
 </td>
 </tr>
 <tr>
