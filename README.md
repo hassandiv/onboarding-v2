@@ -66,31 +66,27 @@
 * Follow the same installation steps above to complete the installation.
 
 ## How to use/test the App:
-#### Open visual studio terminal and run the following commands</p>
-First clone repository from GitHub
+#### Open visual studio terminal and run the following commands
 ```
+# Clone repository from GitHub
 git clone git@github.com:hassan-mo/onboarding-v2.git
-```
-then
-```
+
+# then
 cd onboarding-v2
-```
-Install npm for Express server
-```
+
+# Install dependencies for express server
 npm install
-```
-then
-```
-cd client
-```
-Install npm for React App
-```
-npm install
-```
-then
-```
+
+# Install dependencies for client
+cd client && npm install
+
+# Run the client and the server with concurrently
 cd ..
 npm run dev
+
+
+# Server runs on http://localhost:1000/ 
+# Client runs on http://localhost:3000/
 ```
 * React app should start on a new browser tab with the following url: ```http://localhost:3000/```
 * You can test the App by clicking on the green button "Take the survey".
