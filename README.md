@@ -1,7 +1,7 @@
 ## Onboarding Survey App
 * React Application for Onboarding Survey.
 * Frontend in React JS, HTML and CSS3.
-* Backend in Node JS, Express and mongoDB.
+* Backend in Node JS, Express and mongoDB Atlas.
 * Demo for the app: https://codesandbox.io/s/crazy-voice-lh0tk
 
 ## Screenshots
@@ -69,17 +69,17 @@
 ## How to use/test the App:
 * Open visual studio terminal and run the following commands
 ```
-git clone git@github.com:hassan-mo/onboardingapp-v2.git
+git clone git@github.com:hassan-mo/onboarding-v2.git
 npm install
 npm run dev
 ```
 * React app should start on a new browser tab with the following url: ```http://localhost:3000/```
 * You can test the App by clicking on the green button "Take the survey".
 * Follow the Application step by step and choose the answer to the questions and click on the green button "Next question". 
-* It is required to select an option before clicking the "Next question".
+* It is required to select an option before clicking on the "Next question" button.
 
 ### Express Server:
-* Express and mongoDB added to the server.js file.
+* Express and mongoDB Atlas added to the server.js file.
 * MongoDB Atlas connected with a database user on the cloud. No need for exporting database.
 * Our Rest API is a get request and created for our survey data inside of server.js file.
 * Also, I have implemented a pagination function to sync the data, total number of pages and items limit per page.
