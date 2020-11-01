@@ -1,5 +1,5 @@
 ## Onboarding Survey App
-* React Application for Onboarding Survey.
+* Full Stack React Application For Onboarding Survey.
 * Frontend in React JS, HTML and CSS3.
 * Backend in Node JS, Express and mongoDB Atlas.
 
