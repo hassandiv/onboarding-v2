@@ -1,7 +1,8 @@
 ## Onboarding Survey App
 * Full Stack React Application For Onboarding Survey.
 * Frontend in React JS, HTML and CSS3.
-* Backend in Node JS, Express and mongoDB Atlas.
+* Backend in Node JS and Express.
+* Database MongoDB Atlas.
 
 ## Screenshots
 <table>
@@ -55,7 +56,7 @@
 </tr>
 <table>
   
-## Requirements for the App:
+## My requirements:
 1. Download Node JS from https://nodejs.org/en/download/
 * Select the package depending on your operating system Windows or macOS or Linux.
 * Click save on your desktop. 
@@ -81,21 +82,20 @@ npm install
 cd client && npm install
 
 # Run the client and the server with concurrently
-cd ..
-npm run dev
+cd .. && npm run dev
 
 
 # Server runs on http://localhost:1000/ 
 # Client runs on http://localhost:3000/
 ```
-* React app should start on a new browser tab with the following url: ```http://localhost:3000/```
+* React app should start on a new browser tab with the following url: ```http://localhost:3000/``` make sure you are connected to the internet for our database to work. 
 * You can test the App by clicking on the green button "Take the survey".
 * Follow the Application step by step and choose the answer to the questions and click on the green button "Next question". 
 * It is required to select an option before clicking on the "Next question" button.
 
 ### Express Server:
-* Express and mongoDB Atlas added to the server.js file.
-* MongoDB Atlas connected with a database user on the cloud. No need for exporting database.
+* Express and MongoDB Atlas added to the server.js file.
+* MongoDB Atlas connected with a database user on the cloud. No need for importing database.
 * Our Rest API is a get request and created for our survey data inside of server.js file.
 * Also, I have implemented a pagination function to sync the data, total number of pages and items limit per page.
 * Created a Mongoose schema in datas.js
@@ -118,16 +118,23 @@ npm install -g concurrently
 npm install -g nodemon
 ```
 ### I've created 7 components for this App:
-1.``` App.js```: It contains our AppProvider, three Components and it's Routes: Home, Diet, and DietComplete.
+1.``` App.js```: 
+It contains our AppProvider, three Components and it's Routes: Home, Diet, and DietComplete.
 
-2.``` Nav.js```: Nav component is the header of the App, it contains our survey menu items, progress bar and number of questions.
+2.``` Nav.js```: 
+Nav component is the header of the App, it contains our survey menu items, progress bar and number of questions.
 
-3.``` AppContext.js```: Context API contains our initial state for "count" and "percentage" variables. The counter will update our state and save it in a local storage, if we refresh the brower our state stay the same.
+3.``` AppContext.js```: 
+Context API contains our initial state for "count" and "percentage" variables. The counter will update our state and save it in a local storage, if we refresh the brower our state stay the same.
 
-4.``` Home.js```: Main Landing Page and it contains image and content.
+4.``` Home.js```: 
+Main Landing Page and it contains image and content.
 
-5.``` Survey.js```: It contains our rest API from Express server fetched with useEffect hook, multiple states, browser history API PUSH and POP state, a form with a radio button and submit button. 
+5.``` Survey.js```: 
+It contains our rest API from Express server fetched with useEffect hook, multiple states, browser history API PUSH and POP state, a form with a radio button and submit button. 
 
-6.``` Diet.js```: It contains a prop called Match, this prop is passed into every route that is rendered from survey component. Which holds the key and the actual value in the URL.
+6.``` Diet.js```: 
+It contains a prop called Match, this prop is passed into every route that is rendered from survey component. Which holds the key and the actual value in the URL.
 
-7.``` DietComplete.js```: It has the content for the final result page.
+7.``` DietComplete.js```: 
+It has the content for the final result page.
