@@ -95,7 +95,7 @@ cd .. && npm run dev
 
 ### Express Server:
 * Express and MongoDB Atlas added to the server.js file.
-* MongoDB Atlas connected with a database user on the cloud. No need for importing database.
+* MongoDB Atlas connected with a database user on the cloud. No need for importing database.`
 * Our Rest API is a get request and created for our survey data inside of server.js file.
 * Also, I have implemented a pagination function to sync the data, total number of pages and items limit per page.
 * Created a Mongoose schema in datas.js
@@ -106,12 +106,12 @@ cd .. && npm run dev
 * You can take a look at the server response in ```JSON format``` visit this url: ```http://localhost:1000/api/surveyoptions?page=1``` you can change the parameter value to ```page=2, page=3 up to 5```.
 
 ### NPM Packages and Modules Installed:
-Client Side
+
 ```
+# Client Side
 npm install react-router-dom
-```
-Server Side
-```
+
+# Server Side
 npm install mongoose
 npm install express
 npm install -g concurrently
@@ -119,22 +119,22 @@ npm install -g nodemon
 ```
 ### I've created 7 components for this App:
 1.``` App.js```: 
-It contains our AppProvider, three Components and it's Routes: Home, Diet, and DietComplete.
+* It contains our AppProvider, three Components and it's Routes: Home, Diet, and DietComplete.
 
 2.``` Nav.js```: 
-Nav component is the header of the App, it contains our survey menu items, progress bar and number of questions.
+* Nav component is the header of the App, it contains our survey menu items, progress bar and number of questions.
 
 3.``` AppContext.js```: 
-Context API contains our initial state for "count" and "percentage" variables. The counter will update our state and save it in a local storage, if we refresh the brower our state stay the same.
+* Context API contains our initial state for "count" and "percentage" variables. The counter will update our state and save it in a local storage, if we refresh the brower our state stay the same.
 
 4.``` Home.js```: 
-Main Landing Page and it contains image and content.
+* Main Landing Page and it contains image and content.
 
 5.``` Survey.js```: 
-It contains our rest API from Express server fetched with useEffect hook, multiple states, browser history API PUSH and POP state, a form with a radio button and submit button. 
+* It contains our rest API from Express server fetched with useEffect hook, multiple states, browser history API PUSH and POP state, a form with a radio button and submit button. 
 
 6.``` Diet.js```: 
-It contains a prop called Match, this prop is passed into every route that is rendered from survey component. Which holds the key and the actual value in the URL.
+* It contains a prop called Match, this prop is passed into every route that is rendered from survey component. Which holds the key and the actual value in the URL.
 
 7.``` DietComplete.js```: 
-It has the content for the final result page.
+* It has the content for the final result page.
