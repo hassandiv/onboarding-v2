@@ -11,10 +11,10 @@
 </tr>
 <tr>
 <td>
-<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/1.png" width="400" height="auto">
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/1.png">
 </td>
 <td>
-<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/2.png" width="400" height="auto">
+<img src="https://github.com/hassan-mo/onboarding-v2/blob/master/client/src/screenshots/2.png">
 </td>
 </tr>
 <tr>
@@ -126,7 +126,7 @@ npm install -g nodemon
 
 4.``` Home.js```: Main Landing Page and it contains image and content.
 
-5.``` Survey.js```: It contains the rest API from Express server fetched with our useEffect hook, multiple states and a form with our radio button and submit button.
+5.``` Survey.js```: It contains our rest API from Express server fetched with useEffect hook, multiple states, browser history API PUSH and POP state, a form with a radio button and submit button. 
 
 6.``` Diet.js```: It contains a prop called Match, this prop is passed into every route that is rendered from survey component. Which holds the key and the actual value in the URL.
 
