@@ -1,5 +1,5 @@
-## Onboarding Survey App
-* Full Stack React Application For Onboarding Survey.
+## React Survey App
+* Full Stack React Survey Application.
 * Frontend in React JS, HTML and CSS3.
 * Backend in Node JS and Express.
 * Database MongoDB Atlas.
@@ -56,7 +56,7 @@
 </tr>
 <table>
   
-## My requirements:
+## Requirements:
 1. Download Node JS from https://nodejs.org/en/download/
 * Select the package depending on your operating system Windows or macOS or Linux.
 * Click save on your desktop. 
@@ -70,7 +70,7 @@
 #### Open visual studio terminal and run the following commands
 ```
 # clone repository from GitHub
-git clone git@github.com:hassan-mo/onboarding-v2.git             
+git clone git@github.com:hassandiv/onboarding-v2.git             
 
 # then
 cd onboarding-v2
